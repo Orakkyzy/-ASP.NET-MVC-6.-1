@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | E-Shopper</title>
+    <link href="~/Templates/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Templates/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Templates/css/prettyPhoto.css" rel="stylesheet">
+    <link href="~/Templates/css/price-range.css" rel="stylesheet">
+    <link href="~/Templates/css/animate.css" rel="stylesheet">
+    <link href="~/Templates/css/main.css" rel="stylesheet">
+    <link href="~/Templates/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="~/Templates/js/html5shiv.js"></script>
+    <script src="~/Templates/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="~/Templates/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/Templates/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/Templates/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/Templates/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="~/Templates/images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body>
+    @await Html.PartialAsync("Partial/_Header")<!--/header-->
+
+   <!--/slider-->
+    @RenderSection("top", false)
+    <section>
+        <div class="container">
+          @RenderBody()
+        </div>
+    </section>
+
+    @await Html.PartialAsync("Partial/_Footer")  <!--/Footer-->
+
+
+    <script src="~/Templates/js/jquery.js"></script>
+    <script src="~/Templates/js/bootstrap.min.js"></script>
+    <script src="~/Templates/js/jquery.scrollUp.min.js"></script>
+    <script src="~/Templates/js/price-range.js"></script>
+    <script src="~/Templates/js/jquery.prettyPhoto.js"></script>
+    <script src="~/Templates/js/main.js"></script>
+
+</body>
+</html>
